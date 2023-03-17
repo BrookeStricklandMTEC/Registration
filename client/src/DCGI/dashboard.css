@@ -1,0 +1,146 @@
+.holder {
+    width: 93%;
+    background-color: white;
+    margin: 10px 10px 0 10px;
+    padding: 10px 0 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.iconSchool {
+    font-size: 50px;
+    padding-right: 40px
+}
+
+.h-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.h-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.h-tittle {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.h-sub {
+    font-size: 20px;
+    color: #5337ff;
+    font-weight: 900;
+}
+
+.dashboardbutton {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    outline: none;
+    font-size: 24px;
+    border-radius: 8px;
+    color: #5337ff;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.dashboardbutton:hover {
+    background-color: #c8c0ff;
+    transition: 1s;
+}
+
+.join {
+    background-color: #5337ff;
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;;
+    position: fixed;
+    right: 45px;
+    bottom: 35px
+}
+
+/* -----------------panel--------------- */
+/* -----------------panel--------------- */
+
+.panel {
+    padding: 0 18px;
+    width: 93.3%;
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.lr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: row
+}
+
+.panel-left{
+    width:50%;
+    margin-left:20px;
+}
+
+.panel-tittle{
+    color:#5337ff;
+    font-size: 25px;
+}
+
+.panel-right{
+    text-align: left;
+    width:45%;
+    margin-left:20px;
+    line-height: 10px;
+}
+
+.numberOfStudents{
+    font-size: 50px;        
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin-right:50px;
+    line-height: 0;
+}
+
+.panel-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 10px;
+    margin-bottom:20px;
+}
+
+.numberOfStudents p{
+    color:#5337ff   
+}
+
+.panel-mt {
+    font-size: 18px;
+    font-weight: 900;
+    color:#5337ff
+}
+
+.panel-black {
+    font-weight: 400;
+    color:black
+}

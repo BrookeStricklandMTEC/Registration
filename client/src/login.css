@@ -1,0 +1,161 @@
+
+
+.whiteScreen {
+  background-color: white;
+  position: absolute;
+  width: 375px;
+  height: 375px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.whiteScreen1 {
+  background-color: white;
+  position: absolute;
+  width: 375px;
+  height: 550px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* --------------StartScreen------------------ */
+/* --------------StartScreen------------------ */
+
+.logo1 {
+  width: 150px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+/* --------------Buttons------------------ */
+/* --------------Buttons------------------ */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.button1 {
+  font-size: 20px;
+  border-radius: 10px;
+  width: 125px;
+  height: 40px;
+  color: white;
+  background-color: #5337ff;
+  border: 1px solid #5337ff;
+  cursor: pointer;
+  transition: 1s;
+  text-align: center;
+}
+
+.button1:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  color: #e1dfdf;
+}
+
+.button2:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  background-color: #e1dfdf
+}
+
+.button2 {
+  font-size: 20px;
+  border-radius: 10px;
+  width: 125px;
+  height: 40px;
+  color: #5337ff;
+  background-color: white;
+  border: 1px solid #5337ff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button3:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  background-color: #e1dfdf
+}
+
+.button3 {
+  font-size: 20px;
+  border-radius: 10px;
+  width: 125px;
+  height: 50px;
+  color: #5337ff;
+  background-color: white;
+  border: 1px solid #5337ff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* --------------Login------------------ */
+/* --------------Login------------------ */
+.welcomeText {
+  padding-top: 5px;
+  font-size: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input1 {
+  font-size: 20px;
+  width: 300px;
+  padding-top: 3px;
+  padding-left: 8.5px;
+  padding-right: 8.5px;
+  height: 35px;
+  color: black;
+  background-color: #d9d9d9;
+  border: none;
+  margin-bottom: 8px;
+}
+
+.forgotPass {
+  padding-top: 8px;
+  font-size: 13px;
+  color: #5337ff;
+  margin-left: 215px;
+}
+
+
+/* --------------PadTop------------------ */
+/* --------------PadTop------------------ */
+
+.padtop {
+  margin-top: 30px;
+}
+
+.padtop1 {
+  margin-top: 5px;
+}
+
+.padtop2 {
+  margin-top: 5px;
+}
+
