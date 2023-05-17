@@ -57,22 +57,6 @@
     transition: 1s;
 }
 
-.join {
-    background-color: #5337ff;
-    width: 65px;
-    height: 65px;
-    border-radius: 100px;
-    cursor: pointer;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;;
-    position: fixed;
-    right: 45px;
-    bottom: 35px
-}
-
 /* -----------------panel--------------- */
 /* -----------------panel--------------- */
 

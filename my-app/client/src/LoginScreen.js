@@ -40,6 +40,20 @@ function Login() {
             });
         }
 
+        else {
+            console.log('wrong username or password')
+            toast.error('Username or Password is Incorrect', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
+        }
+
         fetch("/login", {
             method: "POST",
             headers: {
@@ -66,7 +80,7 @@ function Login() {
     function goto(){window.location.href = '/register'}
     return (
         <>
-            <div className='whiteScreen'>
+            <div className='whiteScreen4'>
                 <div className="inside">
                     <p className="welcomeText"> Welcome, Glad to See You </p>
 
@@ -75,8 +89,8 @@ function Login() {
                         <input type="password" id='login-password' placeholder="Password" className='input1 padtop' required onChange={(e) => setPassword (e.target.value)}></input>
                     </div>
 
-                    <button className='button1 padtop1' onClick={Submit}> Login </button>
-                    <button className='button3 padtop1' onClick={goto}> Don't Have an Account? </button>
+                    <button className='button1 padtop4' onClick={Submit}> Login </button>
+                    <button className='button3 padtop4' onClick={goto}> Don't Have an Account? </button>
                 </div>
             </div>
             <ToastContainer />

@@ -2,7 +2,6 @@ body{
     background-color: #d9d9d9;
   }
 
-
 /* --------------Top Bar------------------ */
 /* --------------Top Bar------------------ */
 
@@ -86,8 +85,8 @@ body{
 
 .a{
     padding-bottom:10px;
-    margin-left: 5px;
 }
+
 
 .sidebar .a {
     padding: 12px 8px 12px 16px;
@@ -151,6 +150,7 @@ body{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    cursor: pointer;
   }
   
   .dropdown-content a {
@@ -186,4 +186,21 @@ body{
     text-align: left;
     border:2px solid #5337ff ;
     margin-bottom:35px;
+}
+
+.join {
+    background-color: #5337ff;
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;;
+    position: fixed;
+    right: 45px;
+    bottom: 35px;
+    z-index: 1;
 }

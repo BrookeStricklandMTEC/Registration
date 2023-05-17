@@ -16,7 +16,7 @@ function LoginSign() {
   return (
     <>
       <div id='body'>
-        <div className='whiteScreen'>
+        <div className='whiteScreen3'>
           <div className="inside">
             <img src={logo} alt="Logo" className='logo1' />
             <div className='buttons'>

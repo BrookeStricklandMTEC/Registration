@@ -7,6 +7,8 @@ import {
     faArrowsLeftRight,
     faSearch,
     faCalendar,
+    faA,
+    faPlus,
     faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 import logo from "./IMG/Logo.jpg"
@@ -14,12 +16,12 @@ import userLogo from "./IMG/userLogo.png"
 import Calendar from './DCGI/calendar';
 import Inbox from './DCGI/inbox';
 import MainScreen from './DCGI/dashboard';
+import JoinAClass from './DCGI/JoinClass/joinClass';
+import EditAccount from './DCGI/EditAccount/editAccount';
+
 
 var open = false;
-
-function Logout() {
-    window.location.href = '/';
-}
+var addNewClass = 1
 
 function Dashboard() {
     const [dashboardScreen, setDashboardScreen] = useState("1")
@@ -28,23 +30,33 @@ function Dashboard() {
         running()
     }
     function running() {
-        if (dashboardScreen === "1") {
-            return (
-                <MainScreen />
 
-            )
+        if (dashboardScreen === "1") {
+            if(addNewClass === 1){
+                // document.getElementById("5").style.display = "flex";
+                return (
+                    <MainScreen />
+                )
+            }
         } else if (dashboardScreen === "2") {
+            // document.getElementById("5").style.display = "none";
             return (
                 <Calendar startingDate={new Date}> </Calendar>
             )
-        } else if (dashboardScreen === "3") {
-            return (
-                <></>
-                //nothing so far
-            )
         } else if (dashboardScreen === "4") {
+            // document.getElementById("5").style.display = "none";
             return (
                 <Inbox />
+            )
+        }else if (dashboardScreen === "5" || dashboardScreen === "6") {
+            // document.getElementById("5").style.display = "none"
+            return (
+                <JoinAClass />
+            )
+        }else if (dashboardScreen === "7") {
+            // document.getElementById("5").style.display = "none";
+            return (
+                <EditAccount />
             )
         }
     }
@@ -52,17 +64,21 @@ function Dashboard() {
         window.location.href = '/';
     }
     return (
+
         <>
+            <div className='join' onClick={updateDashboardScreen} id="5">
+                <FontAwesomeIcon icon={faPlus} className="icon" />
+            </div>
             <div className='sidebar' id="mysidebar">
                 <div className="top">
                     <div className='a' id="1" onClick={updateDashboardScreen} >
-                        <FontAwesomeIcon icon={faHouse} className="icon" /> <a className="text" id='dashboard-text' >Dashboard</a>
+                        <FontAwesomeIcon icon={faHouse} className="icon" /> <a className="text" > Dashboard</a>
                     </div>
                     <div className='a' id="2" onClick={updateDashboardScreen}>
                         <FontAwesomeIcon icon={faCalendar} className="icon" /> <a className="text" > Calendar</a>
                     </div>
                     <div className='a' id="4" onClick={updateDashboardScreen}>
-                        <FontAwesomeIcon icon={faEnvelope} className="icon" /> <a className="text" > Contact Us </a>
+                        <FontAwesomeIcon icon={faEnvelope} className="icon" /> <a className="text" > Contact Us</a>
                     </div>
                 </div>
                 <div className="bottom" id="bottom">
@@ -81,9 +97,9 @@ function Dashboard() {
                     <div className="dropdown">
                         <img src={userLogo} alt="Logo" className='user dropbtn' onClick={myFunction} />
                         <div id="myDropdown" className="dropdown-content">
-                            <a href="#home">System</a>
-                            <a href="#about">Edit</a>
-                            <a href="#contact" onClick={Logout}>Logout</a>
+                            <a id="6" onClick={updateDashboardScreen}>Join Class</a>
+                            <a id="7" onClick={updateDashboardScreen}>Edit Account</a>
+                            <a onClick={Logout}>Logout</a>
                         </div>
                     </div>
                 </div>

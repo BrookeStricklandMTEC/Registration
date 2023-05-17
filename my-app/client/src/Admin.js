@@ -35,6 +35,10 @@ function Dashboard() {
       return (
         <Calendar startingDate={new Date} />
       )
+    } else if (dashboardScreen === "3") {
+      return (
+        <></>
+      )
     } else if (dashboardScreen === "4") {
       return (
         <Inbox />
@@ -50,13 +54,16 @@ function Dashboard() {
       <div className='sidebar' id="mysidebar">
         <div className="top">
           <div className='a' id="1" onClick={updateDashboardScreen} >
-            <FontAwesomeIcon icon={faHouse} className="icon" /> <a className="text" >Dashboard</a>
+            <FontAwesomeIcon icon={faHouse} className="icon" /> <a className="text" > Dashboard</a>
           </div>
           <div className='a' id="2" onClick={updateDashboardScreen}>
             <FontAwesomeIcon icon={faCalendar} className="icon" /> <a className="text" > Calendar</a>
           </div>
+          <div className='a' id="3" onClick={updateDashboardScreen}>
+            <FontAwesomeIcon icon={faA} className="icon" /><FontAwesomeIcon icon={faPlus} className="icon" /> <a className="text" > Grades</a>
+          </div>
           <div className='a' id="4" onClick={updateDashboardScreen}>
-            <FontAwesomeIcon icon={faEnvelope} className="icon" /> <a className="text" > Contact Us </a>
+            <FontAwesomeIcon icon={faEnvelope} className="icon" /> <a className="text" > Inbox</a>
           </div>
         </div>
         <div className="bottom" id="bottom">
@@ -75,9 +82,9 @@ function Dashboard() {
           <div className="dropdown">
             <img src={userLogo} alt="Logo" className='user dropbtn' onClick={myFunction} />
             <div id="myDropdown" className="dropdown-content">
-              <a href="#profile"> Profile </a>
-              <a href="#edit"> Edit </a>
-              <a href="#logout" onClick={Logout}>Logout</a>
+            <a href="#contact"> Profile </a>
+              <a href="#about"> Edit </a>
+              <a onClick={Logout} style={{cursor: "pointer"}}> Logout </a>
             </div>
           </div>
         </div>
@@ -107,7 +114,9 @@ function openClose() {
         } else if (run === 2) {
           element.innerHTML = " Calendar"
         } else if (run === 3) {
-          element.innerHTML = " Contact Us"
+          element.innerHTML = " Grades"
+        } else if (run === 4) {
+          element.innerHTML = " Inbox"
         }
         run++
       })

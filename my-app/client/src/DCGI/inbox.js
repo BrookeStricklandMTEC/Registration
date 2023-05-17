@@ -11,7 +11,7 @@ function Inbox() {
     return (
         <>
             <div className='userTittle'>
-                <p className='changingtittle'> Contact an Admin! </p>
+                <p className='changingtittle'>Contact Admin</p>
                 <hr className='line'></hr>
             </div>
             <div className="Email">

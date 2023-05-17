@@ -1,6 +1,9 @@
 
+body{
+  background-color:greenyellow
+}
 
-.whiteScreen {
+.whiteScreen3 {
   background-color: white;
   position: absolute;
   width: 375px;
@@ -14,11 +17,25 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.whiteScreen4 {
+  background-color: white;
+  position: absolute;
+  width: 375px;
+  height: 400px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .whiteScreen1 {
   background-color: white;
   position: absolute;
   width: 375px;
-  height: 550px;
+  height: 560px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -156,6 +173,9 @@
 }
 
 .padtop2 {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
+.padtop4{
+  margin-top: 15px;
+}
